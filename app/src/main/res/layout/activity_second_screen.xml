@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.SecondScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/ll_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        >
+
+        <!-- Btn Back -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <!-- Header Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Second Screen"
+            android:textSize="20dp"
+            android:textColor="#04021D"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!-- Welcome -->
+    <LinearLayout
+        android:id="@+id/ll_identitas"
+        android:layout_below="@id/ll_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        >
+
+        <!-- Welcome -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="13dp"
+            android:textColor="#04021D"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20dp"
+            android:textColor="#04021D"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!-- Selected User Name -->
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected User Name"
+        android:textSize="23dp"
+        android:textColor="#04021D"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <!-- Selected User Name -->
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected User Name"
+        android:textSize="23dp"
+        android:textColor="#04021D"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        />
+
+    <!-- Button Choose User -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="25dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_white"
+        android:backgroundTint="#2B637B"
+        android:layout_marginBottom="30dp"
+        android:text="Choose a User"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppins_medium"
+        />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
