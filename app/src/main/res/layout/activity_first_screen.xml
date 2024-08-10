@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".screens.FirstScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_photo"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:src="@drawable/ic_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_form"
+            android:layout_below="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="60dp">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingHorizontal="25dp"
+                android:background="@drawable/shape_white"
+                android:layout_marginBottom="15dp"
+                android:hint="Name"
+                android:textColor="#04021D"
+                android:textColorHint="#59686777"
+                android:fontFamily="@font/poppins_medium" />
+
+            <EditText
+                android:id="@+id/input_palindrome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingHorizontal="25dp"
+                android:background="@drawable/shape_white"
+                android:hint="Palindrome"
+                android:textColor="#04021D"
+                android:textColorHint="#59686777"
+                android:fontFamily="@font/poppins_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_below="@+id/ll_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="50dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="25dp"
+                android:background="@drawable/shape_white"
+                android:backgroundTint="#2B637B"
+                android:layout_marginBottom="15dp"
+                android:text="Check"
+                android:textColor="#FFF"
+                android:fontFamily="@font/poppins_medium" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="25dp"
+                android:background="@drawable/shape_white"
+                android:backgroundTint="#2B637B"
+                android:text="Next"
+                android:textColor="#FFF"
+                android:fontFamily="@font/poppins_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
